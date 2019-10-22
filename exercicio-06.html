@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/jsdom.css">
+
 </head>
 
 <body>
@@ -115,7 +117,36 @@
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Exercicio 06</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Exercicio 06</li>
+                        </ol>
+                    </nav>
                 </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Crie um algoritmo que leia dois valores inteiros distintos, ao final mostre qual é maior.</p>
+                        </div>
+                    </div>
+                    <form>
+                    <div class="row ">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <label for="primeiroValor">Primeiro valor</label>
+                            <input id="primeiroValor" type="number" class="form-control" required>
+                        </div>
+                        <div class="col-sm-3 col-md-4 col-lg-3">
+                            <label for="segundoValor">Segundo valor</label>
+                            <input id="segundoValor" type="number" class="form-control" required>
+                        </div>
+                        <div class="col-sm-3 pt-29 col-md-2 col-lg-2">
+                            <button type="button" class=" btn btn-success" onclick="maiorDeDoisNumeros()">Simular</button>
+                        </div>
+                    </div>
+                    <div class="row invisible" id="mensagemResultado">
+                    
+                    </div>
+                </form>
             </main>
             <!--#endregion-->
         </div>
@@ -127,6 +158,7 @@
         crossorigin="anonymous"></script>
     <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="assets/js/exercicio06.js"></script>
     <script>
         feather.replace()
     </script>
